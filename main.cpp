@@ -11,12 +11,12 @@ Color actual;
 
 int main(){
     Image Foto;
-    Foto.loadFromFile("");
+    Foto.loadFromFile(""); 
     Vector2u Dimensiones = Foto.getSize();
 
     ofstream resultado;
 
-    resultado.open("");
+    resultado.open(""); // a .txt file
 
     for(int i=0;i<=Dimensiones.y;i++){
         for(int j=0;j<=Dimensiones.x;j++){
