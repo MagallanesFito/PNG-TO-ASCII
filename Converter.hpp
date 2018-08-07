@@ -27,8 +27,8 @@ public:
 
         Color actual;
         string Caracteres[] = {"@", "N","%","Q", "g", "m", "$", "B", "D", "R","#", "8", "d", "O", "b", "U", "A", "q", "h", "G", "p" ,"X", "k", "u", "n", "x","c", "/","*", "+" ,";", "^", "=", " ´" ,":", " _", " .", " `", " "};
-        for(int i=0;i<=Dimensiones.y;i++){
-            for(int j=0;j<=Dimensiones.x;j++){
+        for(int i=0;i<Dimensiones.y;i++){
+            for(int j=0;j<Dimensiones.x;j++){
                 actual = Foto.getPixel(j,i);
                 float GreyScale = (actual.r + actual.g + actual.b)/3;
                 int nivelSaturacion = (int)((GreyScale/255)*(Caracteres_Size-1));
